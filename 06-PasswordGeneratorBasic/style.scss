@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #252525;
+    position: relative;
+}
+
+.wrap {
+    display: grid;
+    place-items: center;
+    margin: 5% auto;
+
+    &-title {
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: #FF5C58;
+        ;
+    }
+
+    &-boxs {
+        width: 350px;
+        height: 60px;
+        margin: 5rem auto;
+        border-radius: .5rem;
+        border: 3px solid #FF5C58;
+        background-color: transparent;
+        padding: 1.2rem;
+        color: #FF5C58;
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    &-btn {
+        width: 350px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        &-start,
+        &-copy {
+            border: 3px solid #FF5C58;
+            width: 150px;
+            padding: .5rem .4rem;
+            border-radius: .2rem;
+            cursor: pointer;
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #FF5C58;
+            text-align: center;
+        }
+
+    }
+}
+.copy-success{
+    background-color: #6ECB63;
+    color: #252525;
+    border: none;
+}

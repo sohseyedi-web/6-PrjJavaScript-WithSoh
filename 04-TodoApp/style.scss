@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: antiquewhite;
+}
+
+.wrap {
+    display: grid;
+    place-items: center;
+    margin: 10% auto;
+
+    &-title {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #121212;
+    }
+
+    &-boxs {
+        margin-top: 2.5rem;
+        width: 50%;
+
+        &__form {
+            position: relative;
+            background-color: #eee;
+
+            input {
+                width: 100%;
+                outline: none;
+                padding: .8rem;
+                border: 0;
+                border-radius: .5rem;
+                font-size: 1.3rem;
+                color: #121212;
+                text-align: right;
+            }
+
+            &-add {
+                position: absolute;
+                left: 2%;
+                top: 15%;
+                width: 35px;
+                height: 35px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                border-radius: 50%;
+                background-color: rgba(200, 198, 212, 0.37);
+                transition: all .4s background-color;
+                
+                .fa{
+                    font-size: 1.2rem;
+                }
+
+                &:hover {
+                    background-color: rgba(171, 165, 202, 0.37);
+                }
+            }
+        }
+    }
+
+    &-contents {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        margin-top: 1.3rem;
+        width: 50%;
+
+        &__item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+            margin: .3rem 0;
+            background-color: #e0e0e0;
+            border-radius: .5rem;
+            padding: .8rem;
+            transition: 200ms transform, 200ms opacity;
+
+            &-todo {
+                font-size: 1.3rem;
+                font-weight: 500;
+            }
+
+            &-actionbtn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: .4rem;
+
+
+                &__complete,
+                &__delete {
+                    background-color: rgb(0, 199, 175);
+                    width: 25px;
+                    height: 25px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #e0e0e0;
+                    border-radius: .3rem;
+                    cursor: pointer;
+
+                    margin-right: .5rem;
+                }
+
+                &__delete {
+
+                    background-color: rgb(255, 98, 163);
+
+                }
+            }
+        }
+    }
+    &-completeText {
+        background-color: rgb(0, 199, 175);
+    }
+    &-deleteText{
+        transform: translateX(-20rem);
+        opacity: 0;
+    }
+}
