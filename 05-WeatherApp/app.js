@@ -1,6 +1,6 @@
 const searchBox = document.querySelector('.wrap-form .wrap-form__input');
 const api = {
-    key: "876e0628a4fbec017ee9625c85825758",
+    key: "api key",
     base: "https://api.openweathermap.org/data/2.5/"
 }
 
